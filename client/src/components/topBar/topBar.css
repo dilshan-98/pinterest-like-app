@@ -1,0 +1,30 @@
+.topBar{
+    padding: 16px 0px; /* used padding instead of margin */
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.search{
+    /* to extend the full div */
+    flex: 1;
+
+    background-color: #f1f1f1;
+    border-radius: 16px;
+    /* flex direction row */
+    display: flex;
+
+    align-items: center;
+    gap: 16px;
+    padding: 16px
+}
+
+.search input{
+    /* to extend the full div */
+    flex: 1;
+
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 18px;
+}
