@@ -4,6 +4,7 @@ import "./userButton.css";
 const UserButton = () => {
     const [open, setOpen] = useState(false);
 
+    //TEMP
     const currentUser = true;
 
     return currentUser ? (
