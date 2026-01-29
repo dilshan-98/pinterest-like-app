@@ -1,10 +1,30 @@
+import { useState } from "react";
 import "./userButton.css";
 
 const UserButton = () => {
-    return (
+    const [open, setOpen] = useState(false);
+
+    //TEMP
+    const currentUser = true;
+
+    return currentUser ? (
         <div className="userButton">
-            UserButton
+            <img src="/general/noAvatar.png" alt="" />
+            <img onClick={() => setOpen(previous => !previous)}
+                src="/general/arrow.svg" 
+                alt="" 
+                className="arrow" 
+            />
+            {open && <div className="userOptions">
+                <div className="userOption">Profile</div>
+                <div className="userOption">Setting</div>
+                <div className="userOption">Logout</div>
+            </div>}
         </div>
+    ) : (
+        <a href="/" className="loginLink">
+            Login / Sign Up
+        </a>
     )
 }
 
