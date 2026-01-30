@@ -1,4 +1,5 @@
 import "./gallery.css";
+import GalleryItem from "../galleryItem/galleryItem";
 
 // TEMP
 const items = [
@@ -169,8 +170,10 @@ const items = [
 
 const Gallery = () => {
     return(
-        <div>
-            Gallery
+        <div className="gallery">
+            {items.map((item) => (
+              <GalleryItem key={item.id} item={item} />
+            ))}
         </div>
     )
 };
