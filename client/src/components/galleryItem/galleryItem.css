@@ -1,3 +1,10 @@
 .galleryItem{
-    
+    /*to use the gridRowEnd used in innerstyles*/
+    display: flex;
+}
+
+.galleryItem img{
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
 }
