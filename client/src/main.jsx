@@ -9,17 +9,20 @@ import Postpage from './routes/postpage/postpage.jsx';
 import Authpage from './routes/authpage/authpage.jsx';
 import Searchpage from './routes/searchpage/postpage.jsx';
 import UserPofilePage from './routes/userprofilepage/userprofilepage.jsx';
+import MainLayout from './routes/layouts/mainLayout.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/create" element={<Createpage />} />
-        <Route path="/pin/:id" element={<Postpage />} />
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/create" element={<Createpage />} />
+          <Route path="/pin/:id" element={<Postpage />} />
+          <Route path="/search" element={<Searchpage />} />
+          <Route path="/:username" element={<UserPofilePage />} />
+        </Route>
         <Route path="/auth" element={<Authpage />} />
-        <Route path="/search" element={<Searchpage />} />
-        <Route path="/:username" element={<UserPofilePage />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
