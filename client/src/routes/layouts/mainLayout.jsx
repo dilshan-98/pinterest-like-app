@@ -1,6 +1,6 @@
 import { Outlet } from "react-router";
-import TopBar from './components/topBar/topBar';
-import LeftBar from './components/leftBar/leftBar';
+import TopBar from "../../components/topBar/topBar.jsx";
+import LeftBar from "../../components/leftBar/leftBar.jsx";
 import "./mainLayout.css";
 
 const MainLayout = () => {
@@ -13,6 +13,6 @@ const MainLayout = () => {
         </div>
       </div>
     )
-}
+};
 
 export default MainLayout;
