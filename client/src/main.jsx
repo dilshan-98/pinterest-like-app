@@ -7,7 +7,7 @@ import Homepage from './routes/homepage/homepage.jsx';
 import Createpage from './routes/createpage/createpage.jsx';
 import Postpage from './routes/postpage/postpage.jsx';
 import Authpage from './routes/authpage/authpage.jsx';
-import Searchpage from './routes/searchpage/postpage.jsx';
+import Searchpage from './routes/searchpage/searchpage.jsx';
 import UserPofilePage from './routes/userprofilepage/userprofilepage.jsx';
 import MainLayout from './routes/layouts/mainLayout.jsx';
 
